@@ -3,6 +3,16 @@
 A small 2.5D top-down battle between two dragons, made for the Dexhigh Services Junior Unity Developer technical
 assessment. You control SoulEater and fight TerrorBringer, an AI dragon with the same three abilities and cooldowns.
 
+<p align="center">
+  <img src="Docs/Media/hero.gif" alt="SoulEater and TerrorBringer trading Sky Strike, Tail Swipe and Fire Breath" width="800">
+</p>
+
+<p align="center">
+  <img src="Docs/Media/main_menu.jpg" alt="Main Menu" width="32%">
+  <img src="Docs/Media/battle.jpg" alt="Battle in progress" width="32%">
+  <img src="Docs/Media/victory_screen.jpg" alt="Winner Screen" width="32%">
+</p>
+
 - **Unity version:** 6000.3.24f1 (Unity 6.3), Universal Render Pipeline
 - **Platform:** Windows 64-bit
 - **Scene:** `Assets/_Project/Scenes/Battle.unity`
@@ -37,6 +47,24 @@ Restart.
 Each ability has its own animation, particle effect, cast sound and impact sound. Damage lands at a fixed point in
 the attack animation, not on the key press, so hits line up with the visuals.
 
+<table>
+  <tr>
+    <th>Fire Breath (1)</th>
+    <th>Tail Swipe (2)</th>
+    <th>Sky Strike (3)</th>
+  </tr>
+  <tr>
+    <td><img src="Docs/Media/fire_breath.gif" alt="Fire Breath: a cone of fire with a damage number on hit"></td>
+    <td><img src="Docs/Media/tail_swipe.gif" alt="Tail Swipe: close-range sweep with knockback"></td>
+    <td><img src="Docs/Media/sky_strike.gif" alt="Sky Strike: take off, fireball from the air, landing"></td>
+  </tr>
+  <tr>
+    <td>Ranged cone of fire in front of the dragon.</td>
+    <td>Close-range sweep that knocks the enemy back.</td>
+    <td>Takes off, fires an exploding fireball from the air, then lands.</td>
+  </tr>
+</table>
+
 ### Enemy AI
 
 `EnemyAI` is a small state machine with four states: **Idle, Chase, Attack, Dead**.
@@ -52,6 +80,12 @@ The AI uses the same `AbilityCaster` component and the same ability assets as th
 cooldowns are identical. Its tuning values (reaction delay, melee chance, circling, Sky Strike rest time) are exposed
 in the Inspector on the `EnemyDragon` prefab.
 
+<p align="center">
+  <img src="Docs/Media/ai_fights_back.gif" alt="TerrorBringer circling the player, then using its own Sky Strike" width="560">
+  <br>
+  <em>TerrorBringer circles the player, then takes off and lands its own Sky Strike.</em>
+</p>
+
 ### Feedback and UI
 
 - Health bars for both dragons at the top of the screen, with a delayed trail that shows the size of each hit.
@@ -59,6 +93,17 @@ in the Inspector on the `EnemyDragon` prefab.
 - Hit feedback: red flash on the dragon that was hit, floating damage numbers, hit particles, hit sounds, camera
   shake and physics knockback.
 - Winner Screen with the winning dragon's name and a Restart button.
+
+<table>
+  <tr>
+    <th>Final blow and Winner Screen</th>
+    <th>Defeat</th>
+  </tr>
+  <tr>
+    <td><img src="Docs/Media/victory.gif" alt="SoulEater lands the final blow and the Winner Screen appears"></td>
+    <td><img src="Docs/Media/defeat_screen.jpg" alt="TerrorBringer Wins screen with Restart button"></td>
+  </tr>
+</table>
 
 ### Main Menu
 
@@ -69,6 +114,12 @@ in the Inspector on the `EnemyDragon` prefab.
   lands exactly on the gameplay camera pose before the FIGHT banner plays (`MenuCamera`).
 - **Options:** master, music and effects volume, screen shake and fullscreen. Settings are saved with PlayerPrefs.
 - Restarting from the Winner Screen skips the menu and goes straight back into the fight.
+
+<p align="center">
+  <img src="Docs/Media/options_menu.jpg" alt="Options menu" width="32%">
+  <img src="Docs/Media/fight_intro.jpg" alt="FIGHT banner at the start of a round" width="32%">
+  <img src="Docs/Media/pause_menu.jpg" alt="Pause menu" width="32%">
+</p>
 
 ### Camera and arena
 
@@ -81,7 +132,8 @@ in the Inspector on the `EnemyDragon` prefab.
 ## Project structure
 
 All project code and content lives in `Assets/_Project`. Third-party packs are kept in their own folders, unchanged
-apart from converting their materials to URP.
+apart from converting their materials to URP. The README screenshots and GIFs live in `Docs/Media`, outside `Assets`,
+so Unity does not import them.
 
 ```
 Assets/_Project
