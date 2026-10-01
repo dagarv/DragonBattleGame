@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a5f29eb514465468d5c3b8e7acfaa2, type: 3}
+  m_Name: TailAttack
+  m_EditorClassIdentifier: Assembly-CSharp::DragonBattle.Combat.AbilityData
+  displayName: Tail Swipe
+  icon: {fileID: 21300000, guid: c5a3d6bb46959b54280d0ccd62680e88, type: 3}
+  damage: 9
+  cooldown: 2
+  range: 4.5
+  radius: 0
+  knockback: 12
+  castEffect: {fileID: 4266800225645145846, guid: 0165b2a142e163248b846a349ba570dd, type: 3}
+  impactEffect: {fileID: 6255034056467182756, guid: b1efaf4e1765c9041a48b9aa87d54648, type: 3}
+  effectLifetime: 2
+  castSound: {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
+  impactSound: {fileID: 8300000, guid: 2b21ef916f6943c439b71a7c74568878, type: 3}
