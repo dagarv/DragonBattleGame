@@ -4,7 +4,9 @@ A small 2.5D top-down battle between two dragons, made for the Dexhigh Services 
 assessment. You control SoulEater and fight TerrorBringer, an AI dragon with the same three abilities and cooldowns.
 
 <p align="center">
-  <img src="Docs/Media/hero.gif" alt="SoulEater and TerrorBringer trading Sky Strike, Tail Swipe and Fire Breath" width="800">
+  <img src="Docs/Media/hero.gif" alt="Main Menu to battle: SoulEater roars, the camera flies over it into the arena and the FIGHT banner plays" width="800">
+  <br>
+  <em>From the Main Menu straight into the fight: SoulEater roars, the camera flies over it and lands on the battle view.</em>
 </p>
 
 <p align="center">
@@ -100,8 +102,8 @@ in the Inspector on the `EnemyDragon` prefab.
     <th>Defeat</th>
   </tr>
   <tr>
-    <td><img src="Docs/Media/victory.gif" alt="SoulEater lands the final blow and the Winner Screen appears"></td>
-    <td><img src="Docs/Media/defeat_screen.jpg" alt="TerrorBringer Wins screen with Restart button"></td>
+    <td width="50%"><img src="Docs/Media/victory.gif" width="100%" alt="SoulEater lands the final blow and the Winner Screen appears"></td>
+    <td width="50%"><img src="Docs/Media/defeat_screen.jpg" width="100%" alt="TerrorBringer Wins screen with Restart button"></td>
   </tr>
 </table>
 
@@ -168,10 +170,10 @@ All third-party assets are free assets from the Unity Asset Store.
 
 | Asset | Publisher | Used for | Link |
 |---|---|---|---|
-| Dragon for Boss Monster: HP (Four Evil Dragons Pack HP) | Dungeon Mason | Both dragon models and animations | https://assetstore.unity.com/packages/3d/characters/creatures/four-evil-dragons-pack-hp-79398 |
-| Stylized Hand Painted Dungeon (Free) | L2S Arts | Arena floor, walls, pillars and torches | https://assetstore.unity.com/packages/3d/environments/stylized-hand-painted-dungeon-free-173934 |
-| Particle Pack | Unity Technologies | Fire breath, fireball, explosions, dust and hit effects | https://assetstore.unity.com/packages/vfx/particles/particle-pack-127325 |
-| RPG Essentials Sound Effects - FREE! | leohpaz | Attack, impact, wind and landing sounds | https://assetstore.unity.com/packages/audio/sound-fx/rpg-essentials-sound-effects-free-227708 |
+| Dragon for Boss Monster: HP (Four Evil Dragons Pack HP) | Dungeon Mason | Both dragon models and animations | [Asset Store page](https://assetstore.unity.com/packages/3d/characters/creatures/four-evil-dragons-pack-hp-79398) |
+| Stylized Hand Painted Dungeon (Free) | L2S Arts | Arena floor, walls, pillars and torches | [Asset Store page](https://assetstore.unity.com/packages/3d/environments/stylized-hand-painted-dungeon-free-173934) |
+| Particle Pack | Unity Technologies | Fire breath, fireball, explosions, dust and hit effects | [Asset Store page](https://assetstore.unity.com/packages/vfx/particles/particle-pack-127325) |
+| RPG Essentials Sound Effects - FREE! | leohpaz | Attack, impact, wind and landing sounds | [Asset Store page](https://assetstore.unity.com/packages/audio/sound-fx/rpg-essentials-sound-effects-free-227708) |
 
 Other:
 
@@ -189,6 +191,8 @@ Other:
 3. Click **Build** and choose an output folder outside `Assets` (for example `Builds/`, which is git-ignored).
 
 ## AI Usage Note
+
+This note is also available as a standalone page: [Docs/AI_Usage_Note.md](Docs/AI_Usage_Note.md).
 
 **Tools used**
 
