@@ -4,7 +4,7 @@ A small 2.5D top-down battle between two dragons, made for the Dexhigh Services 
 assessment. You control SoulEater and fight TerrorBringer, an AI dragon with the same three abilities and cooldowns.
 
 <p align="center">
-  <img src="Docs/Media/hero.gif" alt="Main Menu to battle: SoulEater roars, the camera flies over it into the arena and the FIGHT banner plays" width="800">
+  <img src="Docs/Media/hero.avif" alt="Main Menu to battle: SoulEater roars, the camera flies over it into the arena and the FIGHT banner plays" width="800">
   <br>
   <em>From the Main Menu straight into the fight: SoulEater roars, the camera flies over it and lands on the battle view.</em>
 </p>
@@ -56,9 +56,9 @@ the attack animation, not on the key press, so hits line up with the visuals.
     <th>Sky Strike (3)</th>
   </tr>
   <tr>
-    <td><img src="Docs/Media/fire_breath.gif" alt="Fire Breath: a cone of fire with a damage number on hit"></td>
-    <td><img src="Docs/Media/tail_swipe.gif" alt="Tail Swipe: close-range sweep with knockback"></td>
-    <td><img src="Docs/Media/sky_strike.gif" alt="Sky Strike: take off, fireball from the air, landing"></td>
+    <td><img src="Docs/Media/fire_breath.avif" alt="Fire Breath: a cone of fire with a damage number on hit"></td>
+    <td><img src="Docs/Media/tail_swipe.avif" alt="Tail Swipe: close-range sweep with knockback"></td>
+    <td><img src="Docs/Media/sky_strike.avif" alt="Sky Strike: take off, fireball from the air, landing"></td>
   </tr>
   <tr>
     <td>Ranged cone of fire in front of the dragon.</td>
@@ -83,7 +83,7 @@ cooldowns are identical. Its tuning values (reaction delay, melee chance, circli
 in the Inspector on the `EnemyDragon` prefab.
 
 <p align="center">
-  <img src="Docs/Media/ai_fights_back.gif" alt="TerrorBringer circling the player, then using its own Sky Strike" width="560">
+  <img src="Docs/Media/ai_fights_back.avif" alt="TerrorBringer circling the player, then using its own Sky Strike" width="560">
   <br>
   <em>TerrorBringer circles the player, then takes off and lands its own Sky Strike.</em>
 </p>
@@ -102,7 +102,7 @@ in the Inspector on the `EnemyDragon` prefab.
     <th>Defeat</th>
   </tr>
   <tr>
-    <td width="50%"><img src="Docs/Media/victory.gif" width="100%" alt="SoulEater lands the final blow and the Winner Screen appears"></td>
+    <td width="50%"><img src="Docs/Media/victory.avif" width="100%" alt="SoulEater lands the final blow and the Winner Screen appears"></td>
     <td width="50%"><img src="Docs/Media/defeat_screen.jpg" width="100%" alt="TerrorBringer Wins screen with Restart button"></td>
   </tr>
 </table>
